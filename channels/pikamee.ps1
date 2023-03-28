@@ -6,4 +6,4 @@ $output_folder = ".\vods\pikamee"
 New-Item -ItemType Directory -Force -Path $output_folder | Out-Null
 
 # Download the channel
-yt-dlc --write-info-json --write-description --write-thumbnail --playlist-end 99999 --output "$output_folder/%(uploader)s/%(title)s.%(ext)s" "$channel_url"
+youtube-dlc --write-info-json --write-description --write-thumbnail --playlist-end 99999 --output "$output_folder/%(uploader)s/%(title)s.%(ext)s" "$channel_url"
